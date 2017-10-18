@@ -1,0 +1,284 @@
+.bold {
+    font-style: bold;
+}
+
+.menu-text {
+    font-size: 12px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: #979797;
+    font-size: 1.2em;
+}
+
+.pointer {
+    cursor: pointer;
+    color: grey;
+}
+
+.button.is-primary.is-inverted.is-outlined {
+    border-radius: 20px !important;
+}
+
+.button.is-primary.is-inverted.is-outlined:hover {
+    background-color: #fff;
+    color: #F97300 !important;
+}
+
+.conocenos {
+    width: 100%;
+    background-color: #F97300;
+    text-align: center;
+    color: white;
+    padding: 1.5em;
+}
+
+.conocenos p {
+    font-size: 1em;
+    margin-bottom: 0.4em
+}
+
+.portada {
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    color: white !important;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.portada-negrita {
+    font-weight: bold;
+}
+
+.portada div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 0rem;
+}
+
+.portada h1 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.portada p {
+    color: white !important;
+    font-size: 0.7em;
+}
+
+.tag {
+    border-radius: 70px !important;
+    font-size: 0.6em;
+    margin-left: 0.3em;
+    background-color: #F97300 !important;
+    color: white !important;
+}
+
+.navbar-item.is-tab:hover {
+    background-color: transparent;
+    border-bottom-color: #F97300 !important;
+}
+
+.cursos .container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.cursos-parrafo {
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+}
+
+.card .card-content h2 {
+    color: #F97300 !important;
+    font-weight: bold;
+}
+
+.card .card-content p {
+    color: #4A4F5A !important;
+}
+
+.card-content {
+    padding: 0.5em !important;
+}
+
+.cards {
+    margin: 20px;
+}
+
+@media screen and (min-width: 40em) {
+    .cards {
+        margin-top: -1em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .card {
+        margin-bottom: 1em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(50% - 0.5em);
+        flex: 0 1 calc(50% - 0.5em);
+        /* width: calc(50% - 1em); */
+    }
+}
+
+
+/* mq 40em*/
+
+@media screen and (min-width: 60em) {
+    .cards {
+        margin-top: inherit;
+    }
+    .card {
+        margin-bottom: 2em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(33% - 0.5em);
+        flex: 0 1 calc(33% - 0.5em);
+        /* width: calc(33% - 1em); */
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+#mobile-m-checkbox {
+    display: none;
+}
+
+#mobile-m-checkbox:checked~#mobile-m-overlay {
+    display: block;
+}
+
+#cerrar:checked~#mobile-m-overlay {
+    display: block;
+}
+
+#mobile-m-checkbox:checked~.mobile-m {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#mobile-m-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.mobile-m {
+    position: fixed;
+    left: 0;
+    z-index: 101;
+    top: 0;
+    visibility: hidden;
+    width: 270px;
+    height: 100%;
+    background: white;
+    color: #52686A;
+    -webkit-transition: all 0.2s;
+    transition: all 0.4s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    padding: 0;
+}
+
+.perfil {
+    background-color: #EF6C35;
+    height: 150px;
+    color: white;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1.5em;
+    background-position: 50% 0;
+    background-size: cover;
+    margin-bottom: 1em;
+    align-self: center;
+}
+
+.perfil figure img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.perfil p {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.tag.is-danger {
+    border-radius: 70px !important;
+    font-size: 0.6em;
+}
+
+.mobile-m ul {
+    padding-left: 1rem;
+    width: 100% !important;
+    height: 300px;
+}
+
+.mobile-m ul li {
+    padding: 0.4em;
+}
+
+.mobile-m ul li a {
+    color: #52686A;
+    font-size: 0.7em;
+}
+
+.mobile-m ul li a:hover {
+    color: #F97300;
+}
+
+.is-active {
+    color: #F97300 !important;
+}
+
+@media screen and (max-height: 412px) {
+    .mobile-m ul {
+        overflow: auto !important;
+    }
+}

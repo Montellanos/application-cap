@@ -1,0 +1,10 @@
+<app-header>
+
+</app-header>
+
+<section [hidden]="!isInstallable || installed" [ngSwitch]="instructions">
+    <div *ngSwitchCase="'ios-safari'">Instrucciones de ios safari</div>
+    <div *ngSwitchCase="'android-chrome'">Instrucciones android chorme</div>
+    <button type="button" (click)="understood()" [hidden]="!isInstallable || installed">Entendido</button>
+</section>
+<router-outlet></router-outlet>

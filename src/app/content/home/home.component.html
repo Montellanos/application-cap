@@ -1,0 +1,18 @@
+<section>
+
+    <span>
+      Notificaciones: {{permiss | permissFormat}}
+      <p *ngIf="permiss">{{token}}</p>
+    </span>
+    <div *ngIf="!permiss">
+        <button type="button" (click)="requestPermiss()">Habilitar notificaciones</button>
+    </div>
+    <div *ngIf="permiss">
+        <button type="button" (click)="subscribeToken('new')">New</button>
+    </div>
+    <div *ngIf="permiss">
+        <button type="button" (click)="subscribeToken('general')">General</button>
+    </div>
+
+
+</section>

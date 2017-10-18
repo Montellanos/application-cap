@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Centro Municipal de Capacitación Para El Autoempleo y La Producción | CAP</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="El centro CAP se especializa en impartir cursos gratuitos en diferentes carreras y especialidades, tenemos en oferta estos: Reposteria, Cocina, Tecnologia y mucho más, Plan de La Gente">
+    <meta property="og:title" content="Centro Municipal de Capacitación Para El Autoempleo y La Producción | CAP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://captarija.com/" />
+    <meta property="og:image" content="./assets/img/logo.jpg" />
+    <meta property="og:description" content="El centro CAP se especializa en impartir cursos gratuitos en diferentes carreras y especialidades, tenemos en oferta estos: Reposteria, Cocina, Tecnologia y mucho más, Plan de La Gente" />
+    <meta name="google-site-verification" content="zfETR1Ag28RO2OpHJhQr7yXNhyY7CpIQ2odY7zYM2bM" />
+    <meta name="keywords" content="cap, tarija, educacion, curso, gratis">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="robots" content="index">
+    <link rel="stylesheet" href="./assets/css/bulma.min.css" media="all">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" media="all">
+    <link href="./assets/css/raleway.css" rel="stylesheet" media="all">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Centro Municipal de Capacitación Para El Autoempleo y La Producción">
+    <meta name="apple-mobile-web-app-title" content="CAP Tarija">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="msapplication-navbutton-color" content="#FFFFFF">
+    <link rel="icon" type="image/png" sizes="152x152" href="./assets/icons/ios-safari-152x152.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="./assets/icons/ios-safari-152x152.png">
+</head>
+
+<body class="layout-documentation page-components">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            width: 140px;
+            height: auto;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        .center {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+        }
+        
+        .centrar {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        
+        .linear-activity {
+            overflow: hidden;
+            width: 50%;
+            height: 4px;
+            background-color: #F5F7FA;
+            margin: 20px auto;
+        }
+        
+        .indeterminate {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .indeterminate:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            background-color: #F97300;
+            animation: indeterminate_first 1.5s infinite ease-out;
+        }
+        
+        @keyframes indeterminate_first {
+            0% {
+                left: -100%;
+                width: 100%;
+            }
+            100% {
+                left: 100%;
+                width: 10%;
+            }
+        }
+    </style>
+    <app-root>
+        <div class="center centrar">
+            <img src="./assets/img/logo.jpg">
+            <div class="linear-activity">
+                <div class="indeterminate"></div>
+            </div>
+            <p>Centro Municipal de Capacitación Para El Autoempleo y La Producción</p>
+        </div>
+    </app-root>
+</body>
+<script src="./assets/js/es5-shim.min.js" defer></script>
+<script src="./assets/js/clipboard-1.7.1.min.js" defer></script>
+<script src="./assets/js/main.js" defer></script>
+<script async>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').then(reg => {}).catch(error => {
+            console.log(error);
+        });
+    }
+</script>
+
+</html>

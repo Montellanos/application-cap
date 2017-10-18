@@ -1,0 +1,119 @@
+<input type="checkbox" id="mobile-m-checkbox">
+
+<label for="mobile-m-checkbox" id="mobile-m-overlay"></label>
+
+
+<nav role="navigation" class="mobile-m">
+    <div class="perfil" style="background:
+    linear-gradient(
+      transparent,
+      black
+    ), url(./assets/img/background.jpg);">
+        <figure>
+            <img src="" alt="profile_picture">
+        </figure>
+        <p>{{'MARÍA DEL CARMEN' | textformat : 'allfirstupperforname'}}</p>
+        <p>{{'micorreo' | textformat : 'alllower'}}</p>
+    </div>
+
+    <ul>
+        <span class="menu-text">MENU PRINCIPAL</span>
+        <li>
+            <a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <span class="icon">
+                  <i class="fa fa-home"></i>
+                </span> Inicio
+            </a>
+        </li>
+        <li>
+            <a routerLink="/notifications" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <span class="icon">
+                  <i class="fa fa-bell-o"></i>
+                </span> Notificaciones
+            </a>
+            <span class="tag is-danger"> 90 k</span>
+        </li>
+        <li>
+            <a routerLink="/specialitation-courses" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <span class="icon">
+                  <i class="fa fa-bookmark"></i>
+                </span> Cursos de especialización
+            </a>
+        </li>
+        <li>
+            <a routerLink="/short-courses" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <span class="icon">
+                  <i class="fa fa-book"></i>
+                </span> Curso cortos
+            </a>
+        </li>
+        <li>
+            <a routerLink="/admissions" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <span class="icon">
+                  <i class="fa fa-check-square-o"></i>
+                </span> Admisiones
+            </a>
+        </li>
+
+        <li>
+            <a routerLink="/calendar" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <span class="icon">
+                  <i class="fa fa-calendar"></i>
+                </span> Calendario
+            </a>
+        </li>
+
+        <li>
+            <a routerLink="/graduates" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <span class="icon">
+                  <i class="fa fa-graduation-cap"></i>
+                </span> Egresados
+            </a>
+        </li>
+
+
+        <span class="menu-text">USUARIO</span>
+
+        <li>
+            <a routerLink="/profile" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <span class="icon">
+                  <i class="fa fa-user-o"></i>
+                </span> Perfil
+            </a>
+        </li>
+
+        <li>
+            <a routerLink="/my-courses" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <span class="icon">
+                  <i class="fa fa-address-book-o"></i>
+                </span> Mis cursos
+            </a>
+        </li>
+        <li>
+            <a routerLink="/help-and-comments" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}" id="cerrar">
+                <span class="icon">
+                  <i class="fa fa-question-circle-o"></i>
+                </span> Ayuda y comentarios
+            </a>
+        </li>
+        <li>
+            <a>
+                <span class="icon">
+                  <i class="fa fa-arrow-left"></i>
+                </span> Salir
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+<header class="portada">
+    <div>
+        <span class="icon">
+              <label for="mobile-m-checkbox" >
+                <i class="fa fa-bars" aria-hidden="true" style="color: grey"></i>
+              </label>
+            </span>
+    </div>
+
+</header>
