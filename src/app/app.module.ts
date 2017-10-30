@@ -26,6 +26,10 @@ import { HttpModule } from '@angular/http';
 import * as firebase from 'firebase';
 import { PermissFormatPipe } from './series/pipes/permiss-format.pipe';
 import { NotificationsService } from './series/services/notifications.service';
+import { CartsComponent } from './content/carts/carts.component';
+import { CartsService } from './series/services/carts.service';
+import { ProductsComponent } from './content/products/products.component';
+import { ProductsService } from './series/services/products.service';
 
 const environment = {
   production: false,
@@ -52,7 +56,9 @@ firebase.initializeApp(environment.firebase);
     NotificationsComponent,
     HomeComponent,
     NotfoundComponent,
-    PermissFormatPipe
+    PermissFormatPipe,
+    CartsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +70,7 @@ firebase.initializeApp(environment.firebase);
     LazyLoadImageModule,
     HttpModule
   ],
-  providers: [InstallService, CompatibilityService, NotificationsService],
+  providers: [InstallService, CompatibilityService, NotificationsService, CartsService, ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

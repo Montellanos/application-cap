@@ -1,0 +1,19 @@
+<section>
+    <div *ngFor="let p of products">
+        <div>
+            <strong>{{p.name}} --- </strong>
+            <span>{{p.unit_price}}</span>
+            <input type="number" id="{{p.$key}}">
+
+            <a (click)="addToCart(p.$key)">Añadir al carrito</a>
+        </div>
+    </div>
+</section>
+
+
+<section>
+
+    <a (click)="saveCart()">Guardar Carrito</a>
+
+
+</section>

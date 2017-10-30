@@ -1,3 +1,5 @@
+import { ProductsComponent } from './content/products/products.component';
+import { CartsComponent } from './content/carts/carts.component';
 import { NotfoundComponent } from './content/notfound/notfound.component';
 import { HomeComponent } from './content/home/home.component';
 import { NotificationsComponent } from './content/notifications/notifications.component';
@@ -17,6 +19,14 @@ const routes: Routes = [
   {
     path : 'notifications',
     component: NotificationsComponent
+  },
+  {
+    path : 'products',
+    component : ProductsComponent
+  },
+  {
+    path : 'carts',
+    component : CartsComponent
   },
   {
     path : '**',

@@ -1,8 +1,7 @@
 const CACHE_NAME = 'v:1';
 
 const precacheFiles = [
-    './',
-    'index.html'
+    './'
 ];
 
 self.addEventListener('install', function(event) {

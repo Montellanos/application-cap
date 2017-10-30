@@ -1,0 +1,32 @@
+<section>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Producto</td>
+                <td>Cantidad</td>
+                <td>Precio Unitario</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let m of my_cart.products">
+                <td>{{m.productoKey}}</td>
+                <td>{{m.cantidad}}</td>
+                <td>{{m.unit_price}}</td>
+                <td>{{m.subtotal}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>{{my_cart.total}}</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+
+<section>
+    <input type="number" name="cellphone" id="cellphone" value="75116755"><br>
+    <button type="button" (click)="Pagar()">Pagar</button>
+</section>

@@ -4,7 +4,7 @@
 /dist
 /tmp
 /out-tsc
-/deploy
+/deploy/functions/node_modules
 
 # dependencies
 /node_modules
